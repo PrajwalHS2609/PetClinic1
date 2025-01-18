@@ -1,0 +1,104 @@
+.serviceForYou-container {
+  /* border: solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.serviceForYou-content {
+  /* border: solid blue; */
+  width: 45%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.serviceForYou-content:nth-child(2) {
+  width: 40%;
+}
+.serviceForYouImgs-container {
+  /* border: solid green; */
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serviceForYouImgs-container > img {
+  border-radius: 20px;
+}
+.serviceForYouImgs-container > img:nth-child(2) {
+  position: absolute;
+  right: -20px;
+  bottom: -30;
+  width: 400px;
+}
+.serviceForYouContent-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.serviceForYouContent-content {
+  width: 100%;
+}
+.serviceForYouContent-content:nth-child(2) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.serviceForYouContent-content > h6 {
+  font-weight: 600;
+}
+.serviceForYouContent-content > h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.serviceForYouContent-content > p {
+  font-weight: 600;
+}
+.serviceForYouContent-item {
+  /* border: solid red; */
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.serviceForYouContent-item > ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.serviceForYouContent-item > ul > h4 {
+  font-weight: 600;
+}
+.serviceForYouContent-item > ul > li {
+  font-weight: 600;
+}
+.serviceForYouContent-item > ul > li > a {
+  text-decoration: none;
+  color: var(--customColor4);
+  &:hover {
+    color: var(--customColor5);
+  }
+}
+.serviceForYouContent-content > a > button {
+  /* border: solid red; */
+  padding: 5px;
+  font-weight: 600;
+  color: white;
+  background-color: var(--customColor5);
+  border-radius: 20px;
+  width: 150px;
+  &:hover {
+    background-color: var(--customColor4);
+  }
+}

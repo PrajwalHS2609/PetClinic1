@@ -1,0 +1,89 @@
+.homeCare-container {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeCare-content {
+  /* border: solid green; */
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homeCareContent-container {
+  width: 100%;
+  padding: 20px;
+}
+.homeCareContent-container > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.homeCareContent-container > ul > li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 40%;
+  margin: 20px;
+}
+.homeCareContent-icon {
+  font-size: 30px;
+  transform: rotate(40deg);
+}
+.homeCare-content > img {
+  width: 70%;
+}
+.homeCare-itemWrapper {
+  /* border: solid; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.homeCare-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.homeCare-item > span {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homeCare-item > span > a {
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--customColor4);
+}
+.homeCare-itemIcon {
+  color: white;
+  border-radius: 100%;
+  padding: 5px;
+  font-size: 40px;
+}
+#homeCare-itemIcon1 {
+  background-color: var(--customColor4);
+}
+.homeCare-item:hover #homeCare-itemIcon1 {
+  background-color: var(--customColor5);
+}
+#homeCare-itemIcon2 {
+  background-color: var(--customColor5);
+}
+.homeCare-item:hover #homeCare-itemIcon2 {
+  background-color: var(--customColor4);
+}
+ .homeCare-item>span > a:hover {
+  color: var(--customColor5);
+}

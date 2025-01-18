@@ -1,19 +1,17 @@
-import HomeCare from "@/components/HomePage/HomeCare/HomeCare";
-import HomeHeader from "@/components/HomePage/HomeHeader/HomeHeader";
-import HomePartners from "@/components/HomePage/HomePartners/HomePartners";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeTestimonial from "@/components/HomePage/HomeTestimonial/HomeTestimonial";
 import PetsType from "@/components/HomePage/PetsType/PetsType";
+import ServiceForYou from "@/components/ServicesPage/ServiceForYou/ServiceForYou";
+import ServicesHeader from "@/components/ServicesPage/ServicesHeader/ServicesHeader";
 
-export default function HomePage() {
+export default function ServicePage() {
   return (
     <div className="main-container">
-      <HomeHeader />
+      <ServicesHeader />
+      <ServiceForYou/>
       <HomeService />
       <PetsType />
-      <HomeCare />
       <HomeTestimonial />
-      <HomePartners />
     </div>
   );
 }
