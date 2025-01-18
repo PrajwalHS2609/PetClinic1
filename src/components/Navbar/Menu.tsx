@@ -153,10 +153,8 @@ const Menu = () => {
         </li>
         <li>
           <Link
-            href="/state-hrd-attestation-in-bangalore"
-            className={
-              pathname === "/state-hrd-attestation-in-bangalore" ? "active" : ""
-            }
+            href="/about-us"
+            className={pathname === "/about-us" ? "active" : ""}
           >
             ABOUT US
           </Link>
