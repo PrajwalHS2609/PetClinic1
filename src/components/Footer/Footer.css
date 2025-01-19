@@ -81,7 +81,7 @@
 .footerList-container > ul > li:hover {
   transform: translateX(10px);
 }
-.footerList-container > ul > li:hover a{
+.footerList-container > ul > li:hover a {
   color: var(--customColor5);
 }
 
@@ -93,4 +93,12 @@
   content: "-";
   font-weight: bold;
   color: var(--customColor5);
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footer-container {
+    /* border: solid green; */
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
 }

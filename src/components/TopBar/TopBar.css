@@ -82,20 +82,10 @@
     /* border: solid red; */
     flex-direction: column;
   }
-  .topBar-container > span > p {
-    text-align: center;
-  }
-  .topBar-content > a:nth-child(2) {
-    display: none;
-  }
-  .topBar-content > a:nth-child(3) {
-    display: none;
-  }
-  .topBar-item > a:nth-child(2) {
-    display: none;
-  }
+
   .topBar-content:nth-child(2) {
     /* border: solid green; */
-    gap: 100px;
+    display: none;
+
   }
 }

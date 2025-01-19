@@ -11,8 +11,8 @@ import { useRef, useState } from "react";
 const Menu = () => {
   const pathname = usePathname();
   const [drop, setDrop] = useState(false);
-  // const dropRef = useRef<HTMLDivElement | null>(null); // Explicitly typed ref
-  const dropRef2 = useRef<HTMLDivElement | null>(null); // Explicitly typed ref
+  const dropRef = useRef<HTMLDivElement | null>(null); // Explicitly typed ref
+  // const dropRef2 = useRef<HTMLDivElement | null>(null); // Explicitly typed ref
 
   // const handlePopUp = () => {};
   const hideSideBar = () => {
@@ -33,41 +33,20 @@ const Menu = () => {
     sideBar.style.transform = "translateX(0px)";
     exit.style.display = "block";
   };
-  // const handleDrop = () => {
-  //   const plus = document.querySelector(".plus") as HTMLElement | null;
-
-  //   // Ensure dropRef.current is not null
-  //   if (dropRef.current) {
-  //     if (!drop) {
-  //       setDrop(true);
-  //       dropRef.current.style.display = "flex"; // Safe to access
-  //       if (plus) {
-  //         plus.style.transform = "rotate(45deg)";
-  //       }
-  //     } else {
-  //       setDrop(false);
-  //       dropRef.current.style.display = "none"; // Safe to access
-  //       if (plus) {
-  //         plus.style.transform = "rotate(0)";
-  //       }
-  //     }
-  //   } else {
-  //     console.error("dropRef is null or not attached to an element");
-  //   }
-  // };
-  const handleDrop2 = () => {
+  const handleDrop = () => {
     const plus = document.querySelector(".plus") as HTMLElement | null;
+
     // Ensure dropRef.current is not null
-    if (dropRef2.current) {
+    if (dropRef.current) {
       if (!drop) {
         setDrop(true);
-        dropRef2.current.style.display = "flex"; // Safe to access
+        dropRef.current.style.display = "flex"; // Safe to access
         if (plus) {
           plus.style.transform = "rotate(45deg)";
         }
       } else {
         setDrop(false);
-        dropRef2.current.style.display = "none"; // Safe to access
+        dropRef.current.style.display = "none"; // Safe to access
         if (plus) {
           plus.style.transform = "rotate(0)";
         }
@@ -76,6 +55,27 @@ const Menu = () => {
       console.error("dropRef is null or not attached to an element");
     }
   };
+  // const handleDrop2 = () => {
+  //   const plus = document.querySelector(".plus") as HTMLElement | null;
+  //   // Ensure dropRef.current is not null
+  //   if (dropRef2.current) {
+  //     if (!drop) {
+  //       setDrop(true);
+  //       dropRef2.current.style.display = "flex"; // Safe to access
+  //       if (plus) {
+  //         plus.style.transform = "rotate(45deg)";
+  //       }
+  //     } else {
+  //       setDrop(false);
+  //       dropRef2.current.style.display = "none"; // Safe to access
+  //       if (plus) {
+  //         plus.style.transform = "rotate(0)";
+  //       }
+  //     }
+  //   } else {
+  //     console.error("dropRef is null or not attached to an element");
+  //   }
+  // };
 
   const services = [
     {
@@ -209,11 +209,11 @@ const Menu = () => {
                   SERVICES{" "}
                 </Link>
                 <span>
-                  <AiOutlinePlus className="plus" onClick={handleDrop2} />
+                  <AiOutlinePlus className="plus" onClick={handleDrop} />
                 </span>
               </div>
               {/* ---------------------------respDropDown-------------------------------------------- */}
-              <div className="respDrop" ref={dropRef2}>
+              <div className="respDrop" ref={dropRef}>
                 <ul>
                   {services.map((x) => (
                     <li key={x.id}>

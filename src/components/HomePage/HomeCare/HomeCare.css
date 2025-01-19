@@ -84,6 +84,22 @@
 .homeCare-item:hover #homeCare-itemIcon2 {
   background-color: var(--customColor4);
 }
- .homeCare-item>span > a:hover {
+.homeCare-item > span > a:hover {
   color: var(--customColor5);
+}
+@media screen and (min-width: 320px) and (max-width: 720px) {
+  .homeCare-container {
+    /* border: solid red; */
+    flex-direction: column;
+  }
+  .homeCare-content {
+    /* border: solid green; */
+    width: 100%;
+    padding: 20px;
+  }
+  .homeCare-itemWrapper {
+    /* border: solid; */
+    flex-direction: column;
+    gap: 20px;
+  }
 }

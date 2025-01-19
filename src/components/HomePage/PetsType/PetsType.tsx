@@ -17,18 +17,22 @@ export default function PetsType() {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
       items: 3,
+      slidesToSlide: 3, // Default for super large screens
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
+      slidesToSlide: 3, // Default for super large screens
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 2,
+      slidesToSlide: 1, // Default for super large screens
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
+      slidesToSlide: 1, // Default for super large screens
     },
   };
   return (
@@ -51,7 +55,6 @@ export default function PetsType() {
             removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
             dotListClass="custom-dot-list-style"
             itemClass="carousel-item-padding-40-px"
-            slidesToSlide={3}
           >
             {/* ------------firstSlider------------- */}
             <div>
