@@ -143,4 +143,7 @@
     justify-content: center;
     align-items: center;
   }
+  .serviceForYouContent-content > h2 {
+    text-align: center;
+  }
 }

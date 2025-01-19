@@ -5,7 +5,7 @@ export default function ServiceForYouContent() {
   return (
     <div className="serviceForYouContent-container">
       <div className="serviceForYouContent-content">
-        <h6>Our Shop</h6>
+        <h6>Our Service</h6>
         <h2>We Are Here For You</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod,
