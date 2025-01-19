@@ -167,3 +167,41 @@
 .contactUs-container > iframe {
   width: 100%;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .contactUsMain-container {
+    /* border: solid red; */
+    flex-direction: column;
+  }
+  .contactUsMain-content:nth-child(1) {
+    /* border: solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .contactUsMain-content:nth-child(2) {
+    /* border: solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .contactUsForm-form {
+    /* border: solid red; */
+    /* visibility: hidden; */
+    height: 600px;
+    width: 100%;
+    position: static;
+  }
+  .contactUsForm-container > img {
+    display: none;
+  }
+  .contactUsAddress-content > h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .contactUsAddress-content > p {
+    text-align: center;
+  }
+}
