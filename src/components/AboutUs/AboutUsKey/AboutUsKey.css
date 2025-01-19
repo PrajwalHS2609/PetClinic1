@@ -1,0 +1,187 @@
+.aboutUsKey-container {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.aboutUsKey-content {
+  /* border: solid blue; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+/* ------------------------------------------------------------------- */
+.aboutUsKeyImg-container {
+  /* border: solid yellow; */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.aboutUsKeyImg-content {
+  /* border: solid; */
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.aboutUsKeyImg-content > img {
+  width: 200px;
+  /* position: absolute; */
+  bottom: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 2s ease-in-out;
+  z-index: 1;
+  /* animation: slide 2s infinite linear alternate; */
+}
+/* @keyframes slide {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateX(-50px);
+    }
+} */
+.aboutUsKeyImg-content:nth-child(2) > img {
+  width: 100px;
+}
+.aboutUsKeyImg-content:nth-child(3) > img {
+  width: 150px;
+}
+/* -------------------------------------------------------------------- */
+.aboutUsKeyContent-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: var(--customColor2);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.7);
+}
+.aboutUsKeyContent-content {
+  /* border: solid blue; */
+  width: 50%;
+  padding: 20px;
+}
+.aboutUsKeyContent-content:nth-child(1) {
+  border-right: 1px solid var(--customColor4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.aboutUsKeyContent-content:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.aboutUsKeyContent-item {
+  /* border: solid green; */
+  width: 40%;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.aboutUsKeyContent-icon {
+  /* border: solid red; */
+  height: 70px;
+  width: 70px;
+}
+.aboutUsKeyContent-item > span {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 150px;
+}
+.aboutUsKeyContent-item > span > h4 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.aboutUsKeyContent-item > span > p {
+  font-weight: 600;
+  font-size: 20px;
+}
+.aboutUsKeyContent-content > h3 {
+  font-size: 50px;
+  font-weight: bold;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutUsKeyContent-content > a > button {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  width: 200px;
+  font-weight: 600;
+  background-color: var(--customColor5);
+  color: white;
+  transition: 300ms ease-in-out;
+  &:hover {
+    background-color: var(--customColor4);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .aboutUsKeyContent-container {
+    /* border: solid red; */
+    padding: 20px;
+    transform: scale(1);
+    flex-direction: column;
+  }
+  .aboutUsKeyContent-content {
+    /* border: solid blue; */
+    width: 100%;
+    padding: 20px;
+  }
+  .aboutUsKeyContent-content:nth-child(1) {
+    border-right: none;
+    border-bottom: 1px solid var(--customColor4);
+  }
+  .aboutUsKeyContent-item {
+    /* border: solid green; */
+    width: 100%;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .aboutUsKeyContent-content:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .aboutUsKeyContent-content > h3 {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
+}

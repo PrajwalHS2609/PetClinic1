@@ -92,6 +92,9 @@
     /* border: solid red; */
     flex-direction: column;
   }
+  .homeCareContent-container > ul > li {
+    width: 100%;
+  }
   .homeCare-content {
     /* border: solid green; */
     width: 100%;
