@@ -154,4 +154,26 @@
   .homeCareContent-container > ul > li {
     width: 100%;
   }
+  /* ---------------------------------------------------------- */
+  .custom-shape-divider-bottom-1737194905 {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  /* -------------------------------------------------------- */
+  .subServicesMain-container {
+    /* border: solid red; */
+    width: 100%;
+    padding: 10px;
+    flex-direction: column-reverse;
+  }
+  .subServicesMain-content:nth-child(1) {
+    width: 100%;
+  }
+  .subServicesMain-content:nth-child(2) {
+    width: 100%;
+  }
 }
