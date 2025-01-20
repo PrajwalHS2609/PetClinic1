@@ -143,16 +143,6 @@ const Menu = () => {
         </li>
         <li>
           <Link
-            href="/apostille-services-in-bangalore"
-            className={
-              pathname === "/apostille-services-in-bangalore" ? "active" : ""
-            }
-          >
-            SHOP
-          </Link>
-        </li>
-        <li>
-          <Link
             href="/about-us"
             className={pathname === "/about-us" ? "active" : ""}
           >
@@ -227,24 +217,6 @@ const Menu = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
-            </li>
-            <li>
-              <div className="respMenuList">
-                <Link
-                  href="/apostille-services-in-bangalore"
-                  className={
-                    pathname === "/apostille-services-in-bangalore"
-                      ? "active"
-                      : ""
-                  }
-                  onClick={hideSideBar}
-                >
-                  SHOP
-                </Link>
-                {/* <span>
-                  <AiOutlinePlus className="plus" onClick={handleDrop} />
-                </span> */}
               </div>
             </li>
             <li>
