@@ -80,32 +80,32 @@ const Menu = () => {
   const services = [
     {
       id: "1",
-      pathName: "/broading",
-      menu: "Broading",
+      pathName: "/boarding",
+      menu: "Boarding",
     },
     {
       id: "2",
-      pathName: "/services/off-page-seo-services-in-bangalore",
+      pathName: "/training",
       menu: "Training",
     },
     {
       id: "3",
-      pathName: "/services/off-page-seo-services-in-bangalore",
+      pathName: "/care",
       menu: "Care",
     },
     {
       id: "4",
-      pathName: "/services/off-page-seo-services-in-bangalore",
+      pathName: "/dog-walker",
       menu: "Dog Walker",
     },
     {
       id: "5",
-      pathName: "/services/off-page-seo-services-in-bangalore",
+      pathName: "/activities",
       menu: "Activities",
     },
     {
       id: "6",
-      pathName: "/services/off-page-seo-services-in-bangalore",
+      pathName: "/health-food",
       menu: "Health Food",
     },
   ];
@@ -151,9 +151,9 @@ const Menu = () => {
         </li>
         <li>
           <Link
-            href="/mofa-attestation-in-bangalore"
+            href="/blog"
             className={
-              pathname === "/mofa-attestation-in-bangalore" ? "active" : ""
+              pathname === "/blog" ? "active" : ""
             }
           >
             BLOG{" "}
@@ -222,12 +222,8 @@ const Menu = () => {
             <li>
               {" "}
               <Link
-                href="/state-hrd-attestation-in-bangalore"
-                className={
-                  pathname === "/state-hrd-attestation-in-bangalore"
-                    ? "active"
-                    : ""
-                }
+                href="/about-us"
+                className={pathname === "/about-us" ? "active" : ""}
                 onClick={hideSideBar}
               >
                 ABOUT US
@@ -237,9 +233,9 @@ const Menu = () => {
             <li>
               {" "}
               <Link
-                href="/mofa-attestation-in-bangalore"
+                href="/blog"
                 className={
-                  pathname === "/mofa-attestation-in-bangalore" ? "active" : ""
+                  pathname === "/blog" ? "active" : ""
                 }
                 onClick={hideSideBar}
               >

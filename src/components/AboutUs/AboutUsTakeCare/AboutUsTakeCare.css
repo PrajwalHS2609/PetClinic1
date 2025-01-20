@@ -10,6 +10,7 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  gap: 30px;
 }
 .aboutUsTakeCareMain-cardContainer {
   /* border: solid blue; */
@@ -42,7 +43,7 @@
 
 .custom-shape-divider-bottom-1737294912 {
   position: absolute;
-  top: 142px;
+  top: 143px;
   left: 0;
   width: 100%;
   overflow: hidden;

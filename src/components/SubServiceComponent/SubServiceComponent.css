@@ -1,0 +1,116 @@
+.subServiceComponent-container {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subServiceComponentNav-container {
+  /* border: solid blue; */
+  border-radius: 20px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  background-color: var(--customColor3);
+}
+.subServiceComponentNav-container > ul {
+  margin: 0;
+  padding: 0;
+}
+.subServiceComponentNav-container > ul > li {
+  border-bottom: solid 1px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+.subServiceComponentNav-container > ul > li:nth-child(6) {
+  border-bottom: none;
+}
+.subServiceComponentNav-container > ul > li > a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+.subServiceComponentNav-container > ul > li > a > b {
+  font-size: 23px;
+}
+.subServiceComponentNav-container:hover
+  .subServiceComponentNav-container
+  > ul
+  > li
+  > a {
+  color: var(--customColor2);
+}
+.subServiceComponentNav-container > ul > li > a > img {
+  width: 80px;
+  height: 80px;
+}
+/* -------------------------------SubServiceContent--------------- */
+.subServiceContent-container {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.subServiceContent-content {
+  /* border: solid green; */
+  width: 40%;
+  height: 300px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.subServiceContent-content > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 300ms ease-in-out;
+}
+.subServiceContent-content:hover img {
+  transform: scale(1.1);
+}
+.subServiceContent-contentCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.subServiceContent-contentCover > h4 {
+  font-weight: 600;
+  text-align: center;
+}
+.subServiceContent-contentCover > p {
+  color: var(--customColor4);
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 500;
+}
+.subServiceTakeCare-container {
+  background-color: var(--customColor3);
+  padding: 20px;
+  border-radius: 20px;
+}
+.subServiceTakeCare-container > h3 {
+  font-size: 40px;
+  text-align: center;
+}
+.subServiceTakeCare-container > p {
+  font-size: 18px;
+  font-weight: 600;
+}
