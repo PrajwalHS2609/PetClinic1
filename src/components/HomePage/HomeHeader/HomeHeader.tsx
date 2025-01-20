@@ -2,7 +2,11 @@
 import Link from "next/link";
 import "./HomeHeader.css";
 import { Carousel } from "react-bootstrap";
-
+import ball from "@/media/tennis-ball.png";
+import ropeToy from "@/media/rope-toy.png";
+import petToy from "@/media/pet-toy.png";
+import "@/components/Style/style.css";
+import Image from "next/image";
 export default function HomeHeader() {
   return (
     <Carousel>
@@ -16,6 +20,9 @@ export default function HomeHeader() {
                 alt="Dog"
               />
             </div>
+            <Image src={ball} alt="ball" />
+            <Image src={ropeToy} alt="ropeToy" />
+            <Image src={petToy} alt="petToy" />
           </div>
           <div className="homeHeader-content" id="homeHeader-content2">
             <h2>Fresh Flavoured Dog Food</h2>
@@ -53,6 +60,9 @@ export default function HomeHeader() {
                 alt="rabbit"
               />
             </div>{" "}
+            <Image src={ball} alt="ball" />
+            <Image src={ropeToy} alt="ropeToy" />
+            <Image src={petToy} alt="petToy" />
           </div>
           <div className="homeHeader-content" id="homeHeader-content2">
             <h2>Tasty Organic Rabbit Food</h2>
@@ -91,6 +101,9 @@ export default function HomeHeader() {
                 alt="cat"
               />
             </div>{" "}
+            <Image src={ball} alt="ball" />
+            <Image src={ropeToy} alt="ropeToy" />
+            <Image src={petToy} alt="petToy" />
           </div>
           <div className="homeHeader-content" id="homeHeader-content2">
             <h2>Nutrition Rich Cat Food</h2>
