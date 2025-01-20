@@ -36,7 +36,7 @@ export default function AboutUsKeyContent() {
     <div className="aboutUsKeyContent-container">
       <div className="aboutUsKeyContent-content">
         {keyPoints.map((x) => (
-          <div className="aboutUsKeyContent-item">
+          <div className="aboutUsKeyContent-item" key={x.id}>
             {x.icon}
             <span>
               <h4>{x.head}</h4>

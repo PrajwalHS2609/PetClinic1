@@ -29,7 +29,7 @@ export default function AboutUsTakeCareMain() {
   return (
     <div className="aboutUsTakeCareMain-container">
       {card.map((x) => (
-        <div className="aboutUsTakeCareMain-cardContainer">
+        <div className="aboutUsTakeCareMain-cardContainer" key={x.id}>
           <img src={x.img} alt={x.name} />
           <div className="custom-shape-divider-bottom-1737294912">
             <svg
