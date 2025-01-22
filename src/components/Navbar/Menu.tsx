@@ -90,7 +90,7 @@ const Menu = () => {
     },
     {
       id: "3",
-      pathName: "/care",
+      pathName: "/pets-clinic-in-bangalore",
       menu: "Care",
     },
     {
