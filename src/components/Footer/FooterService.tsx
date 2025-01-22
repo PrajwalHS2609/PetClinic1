@@ -6,22 +6,22 @@ export default function FooterService() {
       <ul>
         <h4>Our Service</h4>
         <li>
-          <Link href="/">Boarding</Link>
+          <Link href="/pets-boarding-in-bangalore">Boarding</Link>
         </li>
         <li>
-          <Link href="/">Training</Link>
+          <Link href="/pets-training-in-bangalore">Training</Link>
         </li>
         <li>
           <Link href="/">Care</Link>
         </li>
         <li>
-          <Link href="/">Dog Walker</Link>
+          <Link href="/dog-walkers-in-bangalore">Dog Walker</Link>
         </li>
         <li>
           <Link href="/">Activities</Link>
         </li>
         <li>
-          <Link href="/">Heath Food</Link>
+          <Link href="/pets-food-in-bangalore">Heath Food</Link>
         </li>
       </ul>
     </div>

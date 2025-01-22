@@ -2,6 +2,7 @@ import SubServiceComponentNav from "../SubServiceComponent/SubServiceComponentNa
 import "@/components/Style/style.css";
 import SubServiceTakeCare from "../SubServiceComponent/SubServiceTakeCare";
 import SubServiceContent from "../SubServiceComponent/SubServiceContent";
+import HealthFoodContent from "./HealthFoodContent";
 export default function HealthFoodMain() {
   return (
     <div className="subServicesMain-container">
@@ -15,19 +16,21 @@ export default function HealthFoodMain() {
             src="https://pettie.wpengine.com/wp-content/uploads/2023/05/service-detail-6.webp"
             alt=""
           />
+          <h1>Pets Food in Bangalore </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            obcaecati aliquam deserunt et molestiae eum fuga inventore sed, in
-            ipsa quam totam quidem dolores! Quaerat exercitationem quis a ipsa
-            quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis exercitationem nesciunt sed error, quo dicta facilis
-            esse fuga consequatur libero sapiente nostrum recusandae enim
-            ducimus quae distinctio voluptas, sunt quasi?
+            Finding the best pets food in Bangalore is crucial for pet owners
+            who want to ensure their furry companions receive the right
+            nutrition for a healthy and happy life. At PetClinics.co.in, we
+            understand the importance of providing high-quality and nutritious
+            food that meets the specific dietary needs of pets. Pets food in
+            Bangalore is available in a variety of options, including dry
+            kibble, wet food, raw diets, and specialized nutrition plans
+            tailored to different breeds and life stages.
           </p>
         </div>
-        '
         <SubServiceContent />
         <SubServiceTakeCare />
+        <HealthFoodContent/>
       </div>
     </div>
   );

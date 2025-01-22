@@ -80,12 +80,12 @@ const Menu = () => {
   const services = [
     {
       id: "1",
-      pathName: "/boarding",
+      pathName: "/pets-boarding-in-bangalore",
       menu: "Boarding",
     },
     {
       id: "2",
-      pathName: "/training",
+      pathName: "/pets-training-in-bangalore",
       menu: "Training",
     },
     {
@@ -95,7 +95,7 @@ const Menu = () => {
     },
     {
       id: "4",
-      pathName: "/dog-walker",
+      pathName: "/dog-walkers-in-bangalore",
       menu: "Dog Walker",
     },
     {
@@ -105,7 +105,7 @@ const Menu = () => {
     },
     {
       id: "6",
-      pathName: "/health-food",
+      pathName: "/pets-food-in-bangalore",
       menu: "Health Food",
     },
   ];

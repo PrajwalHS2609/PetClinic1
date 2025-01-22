@@ -9,7 +9,7 @@ export default function FooterLink() {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/">Services</Link>
+          <Link href="/services">Services</Link>
         </li>
         <li>
           <Link href="/">Shop</Link>

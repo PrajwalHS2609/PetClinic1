@@ -133,15 +133,32 @@
   flex-direction: column;
   gap: 20px;
   padding: 20px;
+  background-color: var(--customColor3);
+  border-radius: 20px;
 }
+.subServiceContent-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.subServiceContent-container .subServicesMain-item:nth-child(even) {
+  background-color: var(--customColor2);
+}
+
+
 .subServicesMain-item > img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
 }
+/* .subServicesMain-item>h1{
+  color: white;
+} */
 .subServicesMain-item > p {
   font-size: 18px;
-  font-weight: 600;
   text-align: justify;
 }
 
@@ -163,7 +180,7 @@
     overflow: hidden;
     line-height: 0;
   }
-  /* -------------------------------------------------------- */
+  /* ---------------------SubService----------------------------------- */
   .subServicesMain-container {
     /* border: solid red; */
     width: 100%;
