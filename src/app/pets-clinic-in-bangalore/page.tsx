@@ -1,6 +1,11 @@
+import AboutUsKey from "@/components/AboutUs/AboutUsKey/AboutUsKey";
+import AboutUsTakeCare from "@/components/AboutUs/AboutUsTakeCare/AboutUsTakeCare";
 import CareContent from "@/components/Care/CareContent";
 import CareHeader from "@/components/Care/CareHeader";
 import CareMain from "@/components/Care/CareMain";
+import HomePartners from "@/components/HomePage/HomePartners/HomePartners";
+import HomeTestimonial from "@/components/HomePage/HomeTestimonial/HomeTestimonial";
+import ServiceForYou from "@/components/ServicesPage/ServiceForYou/ServiceForYou";
 import SubServiceTakeCare from "@/components/SubServiceComponent/SubServiceTakeCare";
 export const metadata = {
   title: "Pets Clinic in Bangalore | Dog & Cat Clinic Near Me",
@@ -17,10 +22,15 @@ export default function Carousel() {
     <div className="main-container">
       <CareHeader />
       <CareMain />
-          <div className="main-content">
-          <SubServiceTakeCare />
-          <CareContent />
-          </div>
+      <div className="main-content">
+        <SubServiceTakeCare />
+        <AboutUsKey />
+        <ServiceForYou />
+        <AboutUsTakeCare />
+        <HomeTestimonial />
+        <HomePartners />
+        <CareContent />
+      </div>
     </div>
   );
 }

@@ -104,8 +104,7 @@
 }
 .subServiceTakeCare-container {
   background-color: var(--customColor3);
-  padding: 20px;
-  border-radius: 20px;
+  padding: 30px;
 }
 .subServiceTakeCare-container > h3 {
   font-size: 40px;

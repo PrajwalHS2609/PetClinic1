@@ -244,11 +244,17 @@
   height: 100%;
 }
 .subServiceShop-wrapper {
+  /* border: solid; */
   border: solid var(--customColor5) 2px;
   border-radius: 20px;
   width: 350px;
   height: 100%;
   margin: 5px;
+}
+.subServiceShop-wrapper > .item {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 .subServiceShop-wrapper > .item > img {
   height: 300px;

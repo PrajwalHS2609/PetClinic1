@@ -1,6 +1,11 @@
+import AboutUsKey from "@/components/AboutUs/AboutUsKey/AboutUsKey";
+import AboutUsTakeCare from "@/components/AboutUs/AboutUsTakeCare/AboutUsTakeCare";
 import BoardingContent from "@/components/Boarding/BoardingContent";
 import BoardingHeader from "@/components/Boarding/BoardingHeader";
 import BoardingMain from "@/components/Boarding/BoardingMain";
+import HomePartners from "@/components/HomePage/HomePartners/HomePartners";
+import HomeTestimonial from "@/components/HomePage/HomeTestimonial/HomeTestimonial";
+import ServiceForYou from "@/components/ServicesPage/ServiceForYou/ServiceForYou";
 import SubServiceTakeCare from "@/components/SubServiceComponent/SubServiceTakeCare";
 export const metadata = {
   title: "Pets Boarding in Bangalore | Dog & Cat Boarding Near Me",
@@ -19,6 +24,11 @@ export default function Boarding() {
       <BoardingMain />
       <div className="main-content">
         <SubServiceTakeCare />
+        <AboutUsKey />
+        <ServiceForYou />
+        <AboutUsTakeCare />
+        <HomeTestimonial />
+        <HomePartners />
         <BoardingContent />
       </div>
     </div>

@@ -1,6 +1,11 @@
+import AboutUsKey from "@/components/AboutUs/AboutUsKey/AboutUsKey";
+import AboutUsTakeCare from "@/components/AboutUs/AboutUsTakeCare/AboutUsTakeCare";
 import HealthFoodContent from "@/components/HealthFood/HealthFoodContent";
 import HealthFoodHeader from "@/components/HealthFood/HealthFoodHeader";
 import HealthFoodMain from "@/components/HealthFood/HealthFoodMain";
+import HomePartners from "@/components/HomePage/HomePartners/HomePartners";
+import HomeTestimonial from "@/components/HomePage/HomeTestimonial/HomeTestimonial";
+import ServiceForYou from "@/components/ServicesPage/ServiceForYou/ServiceForYou";
 import SubServiceTakeCare from "@/components/SubServiceComponent/SubServiceTakeCare";
 export const metadata = {
   title: "Pets Food in Bangalore | Dog & Cats Food Near Me",
@@ -17,10 +22,15 @@ export default function HealthFood() {
     <div className="main-container">
       <HealthFoodHeader />
       <HealthFoodMain />
-          <div className="main-content">
-          <SubServiceTakeCare />
-          <HealthFoodContent />
-          </div>
+      <div className="main-content">
+        <SubServiceTakeCare />
+        <AboutUsKey />
+        <ServiceForYou />
+        <AboutUsTakeCare />
+        <HomeTestimonial />
+        <HomePartners />
+        <HealthFoodContent />
+      </div>
     </div>
   );
 }

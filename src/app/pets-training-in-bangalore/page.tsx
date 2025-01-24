@@ -1,3 +1,8 @@
+import AboutUsKey from "@/components/AboutUs/AboutUsKey/AboutUsKey";
+import AboutUsTakeCare from "@/components/AboutUs/AboutUsTakeCare/AboutUsTakeCare";
+import HomePartners from "@/components/HomePage/HomePartners/HomePartners";
+import HomeTestimonial from "@/components/HomePage/HomeTestimonial/HomeTestimonial";
+import ServiceForYou from "@/components/ServicesPage/ServiceForYou/ServiceForYou";
 import SubServiceTakeCare from "@/components/SubServiceComponent/SubServiceTakeCare";
 import TrainingContent from "@/components/Training/TrainingContent";
 import TrainingHeader from "@/components/Training/TrainingHeader";
@@ -17,10 +22,15 @@ export default function Training() {
     <div className="main-container">
       <TrainingHeader />
       <TrainingMain />
-          <div className="main-content">
-          <SubServiceTakeCare />
-          <TrainingContent />
-          </div>
+      <div className="main-content">
+        <SubServiceTakeCare />
+        <AboutUsKey />
+        <ServiceForYou />
+        <AboutUsTakeCare />
+        <HomeTestimonial />
+        <HomePartners />
+        <TrainingContent />
+      </div>
     </div>
   );
 }

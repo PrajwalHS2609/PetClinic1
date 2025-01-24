@@ -1,6 +1,11 @@
+import AboutUsKey from "@/components/AboutUs/AboutUsKey/AboutUsKey";
+import AboutUsTakeCare from "@/components/AboutUs/AboutUsTakeCare/AboutUsTakeCare";
 import GroomingContent from "@/components/Grooming/GroomingContent";
 import GroomingHeader from "@/components/Grooming/GroomingHeader";
 import GroomingMain from "@/components/Grooming/GroomingMain";
+import HomePartners from "@/components/HomePage/HomePartners/HomePartners";
+import HomeTestimonial from "@/components/HomePage/HomeTestimonial/HomeTestimonial";
+import ServiceForYou from "@/components/ServicesPage/ServiceForYou/ServiceForYou";
 import SubServiceTakeCare from "@/components/SubServiceComponent/SubServiceTakeCare";
 export const metadata = {
   title: "Pets Grooming in Bangalore | Dog & Cat Grooming Near Me",
@@ -18,9 +23,14 @@ export default function Grooming() {
       <GroomingHeader />
       <GroomingMain />
       <div className="main-content">
-          <SubServiceTakeCare />
-          <GroomingContent />
-          </div>
+        <SubServiceTakeCare />
+        <AboutUsKey />
+        <ServiceForYou />
+        <AboutUsTakeCare />
+        <HomeTestimonial />
+        <HomePartners />
+        <GroomingContent />
+      </div>
     </div>
   );
 }

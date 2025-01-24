@@ -1,11 +1,13 @@
 import SubServiceComponentNav from "../SubServiceComponent/SubServiceComponentNav";
 import "@/components/Style/style.css";
 import SubServiceContent from "../SubServiceComponent/SubServiceContent";
+import SubServiceShop from "../SubServiceComponent/SubServiceShop";
 export default function HealthFoodMain() {
   return (
     <div className="subServicesMain-container">
       <div className="subServicesMain-content">
         <SubServiceComponentNav />
+        <SubServiceShop />
       </div>
       <div className="subServicesMain-content">
         '{" "}
