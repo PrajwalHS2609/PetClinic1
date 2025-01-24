@@ -13,37 +13,37 @@ export default function SubServiceComponentNav() {
     <div className="subServiceComponentNav-container">
       <ul>
         <li>
-          <Link href="/boarding">
+          <Link href="/pets-boarding-in-bangalore">
             <Image src={boarding} alt="boarding"></Image>
             <b>Boarding</b>
           </Link>
         </li>
         <li>
-          <Link href="training">
+          <Link href="pets-training-in-bangalore">
             <Image src={training} alt="training"></Image>
             <b>Training</b>
           </Link>
         </li>
         <li>
-          <Link href="dog-walker">
+          <Link href="/dog-walkers-in-bangalore">
             <Image src={dogWalker} alt="dogWalker"></Image>
             <b>Dog Walker</b>
           </Link>
         </li>
         <li>
-          <Link href="/health-food">
+          <Link href="/pets-food-in-bangalore">
             <Image src={healthFood} alt="healthFood"></Image>
             <b>Health Food</b>
           </Link>
         </li>
         <li>
-          <Link href="/activities">
-            <Image src={activities} alt="activities"></Image>
-            <b>Activities</b>
+          <Link href="/pets-grooming-in-bangalore">
+            <Image src={activities} alt="grooming"></Image>
+            <b>Grooming</b>
           </Link>
         </li>
         <li>
-          <Link href="/care">
+          <Link href="/pets-clinic-in-bangalore">
             <Image src={care} alt="care"></Image>
             <b>Care</b>
           </Link>

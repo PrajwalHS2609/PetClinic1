@@ -100,8 +100,8 @@ const Menu = () => {
     },
     {
       id: "5",
-      pathName: "/activities",
-      menu: "Activities",
+      pathName: "/pets-grooming-in-bangalore",
+      menu: "Grooming",
     },
     {
       id: "6",

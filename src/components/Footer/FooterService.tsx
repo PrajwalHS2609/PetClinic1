@@ -18,7 +18,7 @@ export default function FooterService() {
           <Link href="/dog-walkers-in-bangalore">Dog Walker</Link>
         </li>
         <li>
-          <Link href="/activities">Activities</Link>
+          <Link href="/pets-grooming-in-bangalore">Grooming</Link>
         </li>
         <li>
           <Link href="/pets-food-in-bangalore">Heath Food</Link>
