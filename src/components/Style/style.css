@@ -170,7 +170,7 @@
   padding: 15px;
   background-color: var(--customColor3);
   border: 1px solid #e0e0e0;
-  border-radius: 5px;
+  border-radius:20px;
   transition: transform 0.2s;
 }
 

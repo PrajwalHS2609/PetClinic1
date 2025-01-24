@@ -17,13 +17,13 @@ export default function GroomingMain() {
             alt=""
           />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            obcaecati aliquam deserunt et molestiae eum fuga inventore sed, in
-            ipsa quam totam quidem dolores! Quaerat exercitationem quis a ipsa
-            quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis exercitationem nesciunt sed error, quo dicta facilis
-            esse fuga consequatur libero sapiente nostrum recusandae enim
-            ducimus quae distinctio voluptas, sunt quasi?
+          Finding the <a href="https://petclinics.co.in/pets-grooming-in-bangalore">best pet grooming in Bangalore </a> is essential for pet owners
+          who want their furry companions to look and feel their best. At
+          PetClinics.co.in, we understand the importance of maintaining your
+          pet's hygiene and appearance with high-quality <a href="https://petclinics.co.in/pets-grooming-in-bangalore"> grooming services</a>
+          tailored to their specific needs. Whether you own a dog, cat, or small
+          pet, pet grooming in Bangalore offers a range of services to keep your
+          pet healthy and happy.
           </p>
         </div>
         <SubServiceContent />

@@ -4,17 +4,6 @@ export default function GroomingContent() {
     <div className="subServiceContent-container">
       <div className="subServicesMain-item">
         <p>
-          Finding the <a href="https://petclinics.co.in/pets-grooming-in-bangalore">best pet grooming in Bangalore </a> is essential for pet owners
-          who want their furry companions to look and feel their best. At
-          PetClinics.co.in, we understand the importance of maintaining your
-          pet's hygiene and appearance with high-quality <a href="https://petclinics.co.in/pets-grooming-in-bangalore"> grooming services</a>
-          tailored to their specific needs. Whether you own a dog, cat, or small
-          pet, pet grooming in Bangalore offers a range of services to keep your
-          pet healthy and happy.
-        </p>
-      </div>
-      <div className="subServicesMain-item">
-        <p>
           Pet grooming in Bangalore encompasses a variety of services, including
           bathing, hair trimming, nail clipping, ear cleaning, and skin
           treatments. At <a href="https://petclinics.co.in/pets-grooming-in-bangalore">grooming services</a>, our expert groomers use pet-friendly
