@@ -140,8 +140,12 @@
   border-radius: 20px;
   width: 100%;
 }
-.subServicesMain-itemWrapper>p{
+.subServicesMain-itemWrapper > p {
   font-size: 18px;
+  text-align: justify;
+}
+.subServicesMain-itemWrapper>h1{
+  text-align: center;
 }
 .subServicesMain-itemWrapper > img {
   width: 100%;
