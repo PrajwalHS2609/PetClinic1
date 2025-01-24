@@ -1,8 +1,6 @@
 import SubServiceComponentNav from "../SubServiceComponent/SubServiceComponentNav";
 import "@/components/Style/style.css";
 import SubServiceContent from "../SubServiceComponent/SubServiceContent";
-import SubServiceTakeCare from "../SubServiceComponent/SubServiceTakeCare";
-import BoardingContent from "./BoardingContent";
 import SubServiceShop from "../SubServiceComponent/SubServiceShop";
 export default function BoardingMain() {
   return (
@@ -12,7 +10,7 @@ export default function BoardingMain() {
         <SubServiceShop/>
       </div>
       <div className="subServicesMain-content">
-        <div className="subServicesMain-item">
+        <div className="subServicesMain-itemWrapper" id="subServicesMain-idItem">
           <img
             src="https://pettie.wpengine.com/wp-content/uploads/2023/05/service-detail-6.webp"
             alt=""
@@ -29,8 +27,6 @@ export default function BoardingMain() {
           </p>
         </div>
         <SubServiceContent />
-        <SubServiceTakeCare />
-        <BoardingContent/>
       </div>
     </div>
   );

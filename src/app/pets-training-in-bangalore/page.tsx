@@ -1,3 +1,5 @@
+import SubServiceTakeCare from "@/components/SubServiceComponent/SubServiceTakeCare";
+import TrainingContent from "@/components/Training/TrainingContent";
 import TrainingHeader from "@/components/Training/TrainingHeader";
 import TrainingMain from "@/components/Training/TrainingMain";
 export const metadata = {
@@ -15,6 +17,10 @@ export default function Training() {
     <div className="main-container">
       <TrainingHeader />
       <TrainingMain />
+          <div className="main-content">
+          <SubServiceTakeCare />
+          <TrainingContent />
+          </div>
     </div>
   );
 }

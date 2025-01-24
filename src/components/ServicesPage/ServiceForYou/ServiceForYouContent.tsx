@@ -8,10 +8,10 @@ export default function ServiceForYouContent() {
         <h6>Our Service</h6>
         <h2>We Are Here For You</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod,
-          dolorem excepturi! Et consequuntur laboriosam illo, ea vero natus
-          dolor, quia, ducimus aliquid veniam autem minus quibusdam quos nobis
-          nisi exercitationem!
+          We are here for you, offering a range of services to keep your pets
+          healthy and happy. From veterinary care and grooming to training and
+          nutrition advice, our dedicated team ensures your furry companions
+          receive the best care possible.
         </p>
       </div>
       <div className="serviceForYouContent-content">

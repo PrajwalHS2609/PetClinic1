@@ -1,0 +1,9 @@
+.aboutUsContent-container {
+  /* border: solid red; */
+  padding: 30px;
+}
+.aboutUsContent-container > p {
+  font-size: 20px;
+  text-align: justify;
+  font-weight: 500;
+}

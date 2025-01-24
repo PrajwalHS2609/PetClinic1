@@ -10,7 +10,7 @@ export default function SubServiceTakeCare() {
         aliquam, obcaecati quisquam, veniam nam exercitationem. Impedit ipsam
         error architecto voluptatibus nulla?
       </p>
-      <AboutUsTakeCareMain />
+  <AboutUsTakeCareMain/>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eos
         dolores, assumenda blanditiis, omnis aliquam delectus, libero rerum

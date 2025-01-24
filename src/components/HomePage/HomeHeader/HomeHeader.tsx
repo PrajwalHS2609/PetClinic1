@@ -7,6 +7,9 @@ import ropeToy from "@/media/rope-toy.png";
 import petToy from "@/media/pet-toy.png";
 import "@/components/Style/style.css";
 import Image from "next/image";
+import Carousel1Img1 from "@/media/HomeHeaderImg/Carousel1Img1.png";
+import Carousel1Img2 from "@/media/HomeHeaderImg/Carousel1Img2.png";
+
 export default function HomeHeader() {
   return (
     <Carousel>
@@ -15,37 +18,31 @@ export default function HomeHeader() {
         <div className="homeHeader-container">
           <div className="homeHeader-content" id="homeHeader-content1">
             <div className="homeHeader-item">
-              <img
-                src="https://pettie.wpengine.com/wp-content/uploads/2023/04/Home-1-Slider-dog.webp"
-                alt="Dog"
-              />
+              <Image src={Carousel1Img1} alt="Dog" />
             </div>
             <Image src={ball} alt="ball" />
             <Image src={ropeToy} alt="ropeToy" />
             <Image src={petToy} alt="petToy" />
           </div>
           <div className="homeHeader-content" id="homeHeader-content2">
-            <h2>Fresh Flavoured Dog Food</h2>
+            <h2>Care, Compassion, and Healing for Your Furry Friends.</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
-              exercitationem inventore iusto hic explicabo facere temporibus
-              nisi, placeat voluptas nulla.
+              At our Pets Clinic, we offer expert care and compassion to keep
+              your dogs and cats healthy and happy, from routine check-ups to
+              advanced treatments.
             </p>
             <Link href="/">
               <button>DISCOVER</button>
             </Link>
           </div>
           <div className="homeHeader-content" id="homeHeader-content3">
-            <img
-              src="https://pettie.wpengine.com/wp-content/uploads/2023/04/Home-1-Slider-foodpack-2.webp"
-              alt="Food Pack"
-            />
-            <span>
+            <Image src={Carousel1Img2} alt="Food Pack" />
+            {/* <span>
               <img
                 src="https://pettie.wpengine.com/wp-content/uploads/2023/04/Home-1-Slider-Plate-1.webp"
                 alt="Plate"
               />
-            </span>
+            </span> */}
           </div>
         </div>
       </Carousel.Item>
@@ -65,12 +62,11 @@ export default function HomeHeader() {
             <Image src={petToy} alt="petToy" />
           </div>
           <div className="homeHeader-content" id="homeHeader-content2">
-            <h2>Tasty Organic Rabbit Food</h2>
+            <h2>Perfect Paws Grooming Care</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptate, eaque voluptatum omnis ea esse rem aliquam architecto,
-              dolore qui dolor est tempore blanditiis eveniet sunt autem quod
-              perferendis vero voluptates?
+              Give your pets the pampering they deserve with Perfect Paws
+              Grooming Care! From bathing to styling, we ensure your furry
+              friends look and feel their best.
             </p>
             <Link href="/">
               <button>DISCOVER</button>
@@ -106,11 +102,11 @@ export default function HomeHeader() {
             <Image src={petToy} alt="petToy" />
           </div>
           <div className="homeHeader-content" id="homeHeader-content2">
-            <h2>Nutrition Rich Cat Food</h2>
+            <h2>Nutrition Rich Pets Food</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
-              repellendus soluta sunt ut praesentium totam quasi, perferendis
-              modi reiciendis.
+              Fuel your pets with the best! Our nutrition-rich pet food is
+              packed with essential vitamins, minerals, and natural ingredients
+              to keep your furry friends healthy, active, and happy every day.
             </p>
           </div>
           <div className="homeHeader-content" id="homeHeader-content3">

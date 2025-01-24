@@ -1,17 +1,17 @@
 import SubServiceComponentNav from "../SubServiceComponent/SubServiceComponentNav";
 import "@/components/Style/style.css";
 import SubServiceContent from "../SubServiceComponent/SubServiceContent";
-import SubServiceTakeCare from "../SubServiceComponent/SubServiceTakeCare";
-import CareContent from "./CareContent";
+import SubServiceShop from "../SubServiceComponent/SubServiceShop";
 export default function CareMain() {
   return (
     <div className="subServicesMain-container">
       <div className="subServicesMain-content">
         <SubServiceComponentNav />
+        <SubServiceShop />
       </div>
       <div className="subServicesMain-content">
         '{" "}
-        <div className="subServicesMain-item">
+        <div className="subServicesMain-itemWrapper">
           <img
             src="https://pettie.wpengine.com/wp-content/uploads/2023/05/service-detail-6.webp"
             alt=""
@@ -27,10 +27,7 @@ export default function CareMain() {
             care, and specialized treatments to keep pets healthy and happy.
           </p>
         </div>
-        '
         <SubServiceContent />
-        <SubServiceTakeCare />
-        <CareContent />
       </div>
     </div>
   );

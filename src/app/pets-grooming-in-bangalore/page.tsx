@@ -1,5 +1,7 @@
+import GroomingContent from "@/components/Grooming/GroomingContent";
 import GroomingHeader from "@/components/Grooming/GroomingHeader";
 import GroomingMain from "@/components/Grooming/GroomingMain";
+import SubServiceTakeCare from "@/components/SubServiceComponent/SubServiceTakeCare";
 export const metadata = {
   title: "Pets Grooming in Bangalore | Dog & Cat Grooming Near Me",
   description:
@@ -15,6 +17,10 @@ export default function Grooming() {
     <div className="main-container">
       <GroomingHeader />
       <GroomingMain />
+      <div className="main-content">
+          <SubServiceTakeCare />
+          <GroomingContent />
+          </div>
     </div>
   );
 }

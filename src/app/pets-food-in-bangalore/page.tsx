@@ -1,5 +1,7 @@
+import HealthFoodContent from "@/components/HealthFood/HealthFoodContent";
 import HealthFoodHeader from "@/components/HealthFood/HealthFoodHeader";
 import HealthFoodMain from "@/components/HealthFood/HealthFoodMain";
+import SubServiceTakeCare from "@/components/SubServiceComponent/SubServiceTakeCare";
 export const metadata = {
   title: "Pets Food in Bangalore | Dog & Cats Food Near Me",
   description:
@@ -15,6 +17,10 @@ export default function HealthFood() {
     <div className="main-container">
       <HealthFoodHeader />
       <HealthFoodMain />
+          <div className="main-content">
+          <SubServiceTakeCare />
+          <HealthFoodContent />
+          </div>
     </div>
   );
 }

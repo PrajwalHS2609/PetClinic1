@@ -116,9 +116,21 @@
   font-weight: 600;
   text-align: justify;
 }
-@media screen and (min-width: 320px) and (max-width:768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .subServiceContent-container {
     /* border: solid red; */
     flex-direction: column;
+  }
+  .subServiceTakeCare-container {
+    background-color: var(--customColor3);
+    padding: 0px;
+    border-radius: 20px;
+  }
+
+  .subServiceTakeCare-container > p {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: justify;
+    padding: 20px;
   }
 }

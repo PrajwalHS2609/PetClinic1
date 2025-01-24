@@ -1,8 +1,6 @@
 import SubServiceComponentNav from "../SubServiceComponent/SubServiceComponentNav";
 import "@/components/Style/style.css";
-import SubServiceTakeCare from "../SubServiceComponent/SubServiceTakeCare";
 import SubServiceContent from "../SubServiceComponent/SubServiceContent";
-import HealthFoodContent from "./HealthFoodContent";
 export default function HealthFoodMain() {
   return (
     <div className="subServicesMain-container">
@@ -11,7 +9,7 @@ export default function HealthFoodMain() {
       </div>
       <div className="subServicesMain-content">
         '{" "}
-        <div className="subServicesMain-item">
+        <div className="subServicesMain-itemWrapper">
           <img
             src="https://pettie.wpengine.com/wp-content/uploads/2023/05/service-detail-6.webp"
             alt=""
@@ -29,8 +27,6 @@ export default function HealthFoodMain() {
           </p>
         </div>
         <SubServiceContent />
-        <SubServiceTakeCare />
-        <HealthFoodContent/>
       </div>
     </div>
   );

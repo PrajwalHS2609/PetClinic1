@@ -1,5 +1,7 @@
+import CareContent from "@/components/Care/CareContent";
 import CareHeader from "@/components/Care/CareHeader";
 import CareMain from "@/components/Care/CareMain";
+import SubServiceTakeCare from "@/components/SubServiceComponent/SubServiceTakeCare";
 export const metadata = {
   title: "Pets Clinic in Bangalore | Dog & Cat Clinic Near Me",
   description:
@@ -15,6 +17,10 @@ export default function Carousel() {
     <div className="main-container">
       <CareHeader />
       <CareMain />
+          <div className="main-content">
+          <SubServiceTakeCare />
+          <CareContent />
+          </div>
     </div>
   );
 }

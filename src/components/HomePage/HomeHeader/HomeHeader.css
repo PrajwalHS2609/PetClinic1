@@ -67,8 +67,11 @@
 }
 
 #homeHeader-content3 > img {
-  width: 300px;
+  /* border: solid red; */
+  width: 400px;
+  object-fit: contain;
 }
+
 #homeHeader-content3 > span {
   width: 300px;
   position: absolute;

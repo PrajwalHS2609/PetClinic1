@@ -1,5 +1,7 @@
+import BoardingContent from "@/components/Boarding/BoardingContent";
 import BoardingHeader from "@/components/Boarding/BoardingHeader";
 import BoardingMain from "@/components/Boarding/BoardingMain";
+import SubServiceTakeCare from "@/components/SubServiceComponent/SubServiceTakeCare";
 export const metadata = {
   title: "Pets Boarding in Bangalore | Dog & Cat Boarding Near Me",
   description:
@@ -15,6 +17,10 @@ export default function Boarding() {
     <div className="main-container">
       <BoardingHeader />
       <BoardingMain />
+      <div className="main-content">
+        <SubServiceTakeCare />
+        <BoardingContent />
+      </div>
     </div>
   );
 }

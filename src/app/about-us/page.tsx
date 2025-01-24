@@ -1,3 +1,4 @@
+import AboutUsContent from "@/components/AboutUs/AboutUsContent";
 import AboutUsHeader from "@/components/AboutUs/AboutUsHeader";
 import AboutUsKey from "@/components/AboutUs/AboutUsKey/AboutUsKey";
 import AboutUsTakeCare from "@/components/AboutUs/AboutUsTakeCare/AboutUsTakeCare";
@@ -10,6 +11,7 @@ export default function AboutUs() {
   return (
     <div className="main-container">
       <AboutUsHeader />
+      <AboutUsContent/>
       <HomeCare />
       <AboutUsKey />
       <ServiceForYou />
