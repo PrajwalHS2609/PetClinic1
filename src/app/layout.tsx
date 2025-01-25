@@ -18,6 +18,10 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
+        <meta
+          name="google-site-verification"
+          content="DGQW3A2CHUU1gNIoW7c9WRGDwy-bVrV_1ELTnUfDfjA"
+        />
       </head>
       <body>
         <TopBar />
