@@ -16,9 +16,11 @@
 }
 .serviceWhyHead-container > h4 {
   color: var(--customColor3);
+  text-align: center;
 }
 .serviceWhyHead-container > p {
   font-size: 18px;
+  text-align: center;
 }
 .serviceWhyCard-container {
   /* border: solid red; */
@@ -88,6 +90,10 @@
   .serviceWhyCard-container {
     /* border: solid red; */
     gap: 20px;
+  }
+  .serviceWhyHead-container > p {
+    font-size: 18px;
+    text-align: justify;
   }
   .serviceWhyCard-wrapper {
     /* border: solid black; */
