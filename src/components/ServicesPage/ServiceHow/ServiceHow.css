@@ -1,0 +1,106 @@
+.serviceHow-container {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 50px;
+  flex-direction: column;
+  gap: 60px;
+}
+.serviceHowHead-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.serviceHowHead-container > h4 {
+  color: var(--customColor3);
+  text-align: center;
+}
+.serviceHowHead-container > p {
+  font-size: 18px;
+  text-align: center;
+}
+.serviceHowCard-container {
+  /* border: solid green; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.serviceHowCard-wrapper {
+  /* border: solid green; */
+  width: 300px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-bottom-right-radius: 50px;
+  background-color: var(--customColor3);
+}
+.serviceHowCard-content {
+  /* border: solid blue; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 270px;
+  height: 300px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+  border-top-left-radius: 50px;
+  top: -40px;
+  background-color: white;
+  gap: 10px;
+  box-shadow: 0 0 5px black;
+}
+.serviceHowCard-arrow {
+  position: absolute;
+  /* border: solid red; */
+  bottom: -10px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  transform: rotate(-45deg);
+  background-color: white;
+  z-index: -1;
+}
+.serviceHowCard-content > h5 {
+  color: var(--customColor3);
+  text-align: center;
+}
+.serviceHowCard-content > p {
+  text-align: justify;
+  font-size: 18px;
+}
+.serviceHowCard-wrapper > h3 {
+  width: 100%;
+  padding-left: 20px;
+  text-align: start;
+  color: white;
+}
+.serviceHowCard-content > img {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .serviceHowCard-container {
+    /* border: solid green; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 20px;
+  }
+  .serviceHowHead-container > p {
+    font-size: 18px;
+    text-align: justify;
+  }
+}

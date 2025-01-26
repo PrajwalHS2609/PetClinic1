@@ -5,6 +5,7 @@ import HomePartners from "@/components/HomePage/HomePartners/HomePartners";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeTestimonial from "@/components/HomePage/HomeTestimonial/HomeTestimonial";
 import PetsType from "@/components/HomePage/PetsType/PetsType";
+import ServiceContent from "@/components/ServicesPage/ServiceContent";
 import ServiceForYou from "@/components/ServicesPage/ServiceForYou/ServiceForYou";
 import ServicesHeader from "@/components/ServicesPage/ServicesHeader/ServicesHeader";
 export const metadata = {
@@ -29,6 +30,8 @@ export default function ServicePage() {
       <AboutUsTakeCare />
       <HomeTestimonial />
       <HomePartners />
+      <ServiceContent />
+      
     </div>
   );
 }

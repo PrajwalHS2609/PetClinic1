@@ -1,0 +1,128 @@
+.ServiceWhy-container {
+  /* border: solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 10px;
+}
+.serviceWhyHead-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.serviceWhyHead-container > h4 {
+  color: var(--customColor3);
+}
+.serviceWhyHead-container > p {
+  font-size: 18px;
+}
+.serviceWhyCard-container {
+  /* border: solid red; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+}
+.serviceWhyCard-wrapper {
+  /* border: solid black; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 20px;
+}
+.serviceWhyCard-content {
+  /* border: solid blue; */
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 10px;
+  background-color: var(--customColor1);
+}
+.serviceWhyCard-item1 {
+  /* border: solid red; */
+  border-radius: 100%;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--customColor5);
+}
+.serviceWhyCard-icon {
+  color: white;
+  font-size: 50px;
+}
+.serviceWhyCard-item2 > h5 {
+  color: white;
+}
+.serviceWhyCard-item2 > p {
+  color: white;
+  font-size: 18px;
+}
+.serviceWhyCard-wrapper:nth-child(1) {
+  width: 60%;
+}
+.serviceWhyCard-wrapper:nth-child(2) {
+  width: 70%;
+}
+.serviceWhyCard-wrapper:nth-child(3) {
+  width: 80%;
+}
+.serviceWhyCard-wrapper:nth-child(4) {
+  width: 90%;
+}
+@media screen and (min-width: 20px) and (max-width: 768px) {
+  .serviceWhyCard-container {
+    /* border: solid red; */
+    gap: 20px;
+  }
+  .serviceWhyCard-wrapper {
+    /* border: solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+  }
+  .serviceWhyCard-content {
+    /* border: solid blue; */
+    height: 100%;
+    width: 300px;
+    gap: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 0px;
+    flex-direction: column;
+    border-bottom-right-radius: 20px;
+  }
+  .serviceWhyCard-wrapper:nth-child(1) {
+    width: 100%;
+  }
+  .serviceWhyCard-wrapper:nth-child(2) {
+    width: 100%;
+  }
+  .serviceWhyCard-wrapper:nth-child(3) {
+    width: 100%;
+  }
+  .serviceWhyCard-wrapper:nth-child(4) {
+    width: 100%;
+  }
+  .serviceWhyCard-item2 > h5 {
+    text-align: center;
+  }
+  .serviceWhyCard-item2 > p {
+    text-align: justify;
+  }
+}

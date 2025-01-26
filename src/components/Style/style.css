@@ -185,6 +185,11 @@
 }
 .subServicesMain-item > h1 {
   color: var(--customColor3);
+  text-align: center;
+}
+.subServicesMain-item > h4 {
+  color: var(--customColor3);
+  text-align: center;
 }
 .subServicesMain-item > p {
   font-size: 18px;
@@ -194,6 +199,22 @@
 .subServicesMain-item > p > a {
   text-decoration: none;
   color: var(--customColor5);
+}
+.subServicesMain-item > ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.subServicesMain-item > ul > li {
+  list-style: none;
+}
+.subServicesMain-item > ul > li > h5 {
+  color: var(--customColor3);
+}
+.subServicesMain-item > ul > li > p {
+  font-size: 18px;
 }
 /* .subServiceContent-container {
   display: flex;
@@ -292,6 +313,18 @@
 
   .homeCareContent-container > ul > li {
     width: 100%;
+  }
+  .subServicesMain-item > ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .subServicesMain-item > ul > li {
+    list-style: none;
   }
   /* ---------------------------------------------------------- */
   .custom-shape-divider-bottom-1737194905 {
