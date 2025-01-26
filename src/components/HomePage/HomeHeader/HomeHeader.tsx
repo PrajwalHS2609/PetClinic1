@@ -108,6 +108,9 @@ export default function HomeHeader() {
               packed with essential vitamins, minerals, and natural ingredients
               to keep your furry friends healthy, active, and happy every day.
             </p>
+            <Link href="/">
+              <button>DISCOVER</button>
+            </Link>
           </div>
           <div className="homeHeader-content" id="homeHeader-content3">
             <img

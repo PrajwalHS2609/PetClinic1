@@ -75,7 +75,10 @@
   visibility: visible;
 }
 
-.homeServiceMain-itemCover > button {
+.homeServiceMain-itemCover > a {
+  text-decoration: none;
+}
+.homeServiceMain-itemCover > a > button {
   padding: 10px;
   border-radius: 20px;
   background-color: var(--customColor5);

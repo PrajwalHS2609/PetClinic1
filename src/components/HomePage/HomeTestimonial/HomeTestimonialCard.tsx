@@ -5,13 +5,13 @@ interface TestimonialProps {
   image: string;
   description: string;
   name: string;
-  designation: string;
+  place: string;
 }
 const TestimonialCard: React.FC<TestimonialProps> = (props) => {
   return (
     <div className="homeTestimonialCard-container">
       <div className="homeTestimonialCard-content">
-        <img src={props.image} alt="rating" />
+        <Image src={props.image} alt="rating" width={450} height={450}/>
       </div>
       <div className="homeTestimonialCard-content">
         <div className="homeTestimonialCard-rating">
@@ -19,7 +19,7 @@ const TestimonialCard: React.FC<TestimonialProps> = (props) => {
         </div>
         <p>{props.description}</p>
         <h4>{props.name}</h4>
-        <h6>{props.designation}</h6>
+        <h6>{props.place}</h6>
       </div>
     </div>
   );

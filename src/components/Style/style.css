@@ -144,7 +144,7 @@
   font-size: 18px;
   text-align: justify;
 }
-.subServicesMain-itemWrapper>h1{
+.subServicesMain-itemWrapper > h1 {
   text-align: center;
 }
 .subServicesMain-itemWrapper > img {
@@ -182,6 +182,9 @@
   width: 100%;
   height: 100%;
   border-radius: 20px;
+}
+.subServicesMain-item > h1 {
+  color: var(--customColor3);
 }
 .subServicesMain-item > p {
   font-size: 18px;

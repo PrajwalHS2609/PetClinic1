@@ -20,13 +20,13 @@
   /* border: solid black; */
   border-radius: 100%;
   overflow: hidden;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 }
 .homeTestimonialCard-content:nth-child(1) > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill
 }
 
 .homeTestimonialCard-content {
@@ -48,6 +48,9 @@
   font-size: 20px;
   line-height: 1.5;
   text-align: justify;
+}
+.homeTestimonialCard-content>h4{
+  color: var(--customColor5);
 }
 .homeTestimonialMain-container {
   border: solid red;
