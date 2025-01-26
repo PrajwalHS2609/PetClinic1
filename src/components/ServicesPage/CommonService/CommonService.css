@@ -28,6 +28,7 @@
 }
 .commonServiceHead-container > h4 {
   color: var(--customColor3);
+  text-align: center;
 }
 .pccImpCard-content {
   /* border: solid blue; */
