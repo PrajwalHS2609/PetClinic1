@@ -1,7 +1,6 @@
 import "@/components/Style/style.css";
 import CommonService from "./CommonService/CommonService";
 import ServiceWhy from "./ServiceWhy/ServiceWhy";
-import "@/components/Style/style.css";
 import ServiceHow from "./ServiceHow/ServiceHow";
 // import CommonService from "./CommonService/CommonService";
 export default function ServiceContent() {

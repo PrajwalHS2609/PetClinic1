@@ -5,20 +5,20 @@ import HomePartners from "@/components/HomePage/HomePartners/HomePartners";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeTestimonial from "@/components/HomePage/HomeTestimonial/HomeTestimonial";
 import PetsType from "@/components/HomePage/PetsType/PetsType";
-import ServiceContent from "@/components/ServicesPage/ServiceContent";
+import PetClinicsNearBasavanagudiContent from "@/components/PetClinicsCities/PetClinicsNearBasavanagudi/PetClinicsNearBasavanagudiContent";
 import ServiceForYou from "@/components/ServicesPage/ServiceForYou/ServiceForYou";
 import ServicesHeader from "@/components/ServicesPage/ServicesHeader/ServicesHeader";
 export const metadata = {
-  title: "Pet Clinics Services in Bangalore | Best Pet Clinics Service Near Me",
+  title: "Pets Clinic near Basavanagudi | Dog & Cats Clinic near Basavanagudi",
   description:
-    "Pet Clinics Services in Bangalore. Whether you’re a seasoned pet parent or a first-time owner, understanding the range of services can help ensure your pets lead a happy, healthy life.",
-  canonical: "https://petclinics.co.in/services",
+    "Pets Clinic near Basavanagudi is essential for every pet parent who wants to ensure their furry companions receive the best healthcare.",
+  canonical: "https://petclinics.co.in/pets-clinic-near-basavanagudi",
   keywords: [
     "Pet clinic, Veterinary clinic, Dog clinic, Cat clinic",
     "Pet clinic in Bangalore, Best pet clinic in Bangalore, Bangalore",
   ],
 };
-export default function ServicePage() {
+export default function BasavanagudiLayoutPage() {
   return (
     <div className="main-container">
       <ServicesHeader />
@@ -30,7 +30,7 @@ export default function ServicePage() {
       <AboutUsTakeCare />
       <HomeTestimonial />
       <HomePartners />
-      <ServiceContent />
+      <PetClinicsNearBasavanagudiContent/>
     </div>
   );
 }
