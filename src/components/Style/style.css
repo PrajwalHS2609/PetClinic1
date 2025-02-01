@@ -17,6 +17,7 @@
 }
 /* ------------------header------------------- */
 .header-container {
+  /* border: solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,12 +84,14 @@
   }
 }
 .custom-shape-divider-bottom-1737194905 {
+  /* border: solid blue; */
   position: absolute;
-  bottom: 0;
+  bottom: -5px !important;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  z-index: 1;
 }
 
 .custom-shape-divider-bottom-1737194905 svg {
@@ -96,6 +99,7 @@
   display: block;
   width: calc(100% + 1.3px);
   height: 126px;
+  /* border: solid green; */
 }
 
 .custom-shape-divider-bottom-1737194905 .shape-fill {
@@ -359,6 +363,14 @@
 .contentList-containerIcon {
   color: var(--customColor1);
   font-size: 30px;
+}
+.contentList-container > ul > li > a {
+  text-decoration: none;
+  color: var(--customColor5);
+}
+.contentList-container > ul > li > p > a {
+  text-decoration: none;
+  color: var(--customColor5);
 }
 /* ----------------------------------------------------------------------- */
 

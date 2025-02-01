@@ -4,6 +4,7 @@ import PetClinicsNearBannerghattaWhy from "./PetClinicsNearBannerghattaWhy";
 import PetClinicsNearBannerghattaDogClinic from "./PetClinicsNearBannerghattaDogClinic";
 import PetClinicsNearBannerghattaCatClinic from "./PetClinicsNearBannerghattaCatClinic";
 import PetClinicsNearBannerghattaImp from "./PetClinicsNearBannerghattaImp";
+import PetClinicsNearBannerghattaService from "./PetClinicsNearBannerghattaService";
 
 export default function PetClinicsNearBannerghattaContent() {
   return (
@@ -27,7 +28,7 @@ export default function PetClinicsNearBannerghattaContent() {
         </p>
       </div>
       <PetClinicsNearBannerghattaWhyChoose />
-      <PetClinicsNearBannerghattaWhy />
+      <PetClinicsNearBannerghattaService />
       <PetClinicsNearBannerghattaDogClinic />
       <PetClinicsNearBannerghattaCatClinic />
       <div className="subServicesMain-item">
