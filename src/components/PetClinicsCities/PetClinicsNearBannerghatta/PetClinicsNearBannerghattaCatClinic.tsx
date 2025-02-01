@@ -19,26 +19,26 @@ export default function PetClinicsNearBannerghattaCatClinic() {
         <li>
           <span>
             <FaRegHandPointRight className="contentList-containerIcon" />
-            x`` Diagnosis and treatment of urinary tract infections and kidney
+            Diagnosis and treatment of urinary tract infections and kidney
             diseases
           </span>
         </li>{" "}
         <li>
           <span>
             <FaRegHandPointRight className="contentList-containerIcon" />
-            x`` Gentle and stress-free consultations{" "}
+            Gentle and stress-free consultations{" "}
           </span>
         </li>{" "}
         <li>
           <span>
             <FaRegHandPointRight className="contentList-containerIcon" />
-            x`` Dental care and grooming services{" "}
+            Dental care and grooming services{" "}
           </span>
         </li>{" "}
         <li>
           <span>
             <FaRegHandPointRight className="contentList-containerIcon" />
-            x`` Personalized nutritional plans for optimal health{" "}
+            Personalized nutritional plans for optimal health{" "}
           </span>
         </li>
       </ul>

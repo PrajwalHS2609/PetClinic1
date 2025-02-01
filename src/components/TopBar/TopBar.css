@@ -1,9 +1,12 @@
 .topBar-container {
   /* border: solid red; */
   width: 100%;
-  padding: 5px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: var(--customColor2);
 }
@@ -17,23 +20,11 @@
 .topBar-content {
   /* border: solid green; */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  gap: 40px;
-  margin-left: 10px;
+  gap: 20px;
 }
-.topBar-content > a > button {
-  padding: 7px;
-  background-color: var(--customColor5);
-  border-radius: 20px;
-  color: white;
-  transition: 300ms ease-in-out;
-  transform: scale(0.9);
-  letter-spacing: 2px;
-}
-.topBar-content > a > button:hover {
-  background-color: black;
-}
+
 .topBar-item {
   /* border: solid green; */
   display: flex;
@@ -42,21 +33,21 @@
   gap: 20px;
 }
 .topBar-icon {
-  color: black;
+  color: var(--customColor3);
   font-size: 20px;
 }
-/* .topBar-whatsIcon {
-  color: var(--customColor1);
+.topBar-whatsIcon {
+  color: var(--customColor5);
   font-size: 40px;
-} */
+}
 .topBar-content > a {
-  color: black;
+  color: var(--customColor1);
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
 }
 .topBar-item > a {
-  color: black;
+  color: var(--customColor1);
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
@@ -82,10 +73,20 @@
     /* border: solid red; */
     flex-direction: column;
   }
-
+  .topBar-container > span > p {
+    text-align: center;
+  }
+  .topBar-content > a:nth-child(2) {
+    display: none;
+  }
+  .topBar-content > a:nth-child(3) {
+    display: none;
+  }
+  .topBar-item > a:nth-child(2) {
+    display: none;
+  }
   .topBar-content:nth-child(2) {
     /* border: solid green; */
-    display: none;
-
+    gap: 100px;
   }
 }
