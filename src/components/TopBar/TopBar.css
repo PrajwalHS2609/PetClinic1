@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--customColor2);
+  background-color: var(--customColor4);
 }
 .topBar-container > span {
   display: flex;
@@ -61,16 +61,18 @@
   width: 100%;
   text-align: center;
 }
-.topBar-container > p {
+.topBar-container > span > p {
   height: 100%;
   width: 100%;
   text-align: center;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
+  color: white;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .topBar-container {
     /* border: solid red; */
+
     flex-direction: column;
   }
   .topBar-container > span > p {
