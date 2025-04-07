@@ -188,3 +188,10 @@
     bottom: 0;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .homeHeader-content > h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+}

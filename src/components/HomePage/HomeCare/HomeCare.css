@@ -23,6 +23,8 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 .homeCareContent-container > ul > li {
   display: flex;
@@ -92,7 +94,13 @@
     /* border: solid red; */
     flex-direction: column;
   }
+  .homeCareContent-container > ul {
+    /* border: solid royalblue; */
+    width: 100%;
+
+  }
   .homeCareContent-container > ul > li {
+    /* border: solid yellow; */
     width: 100%;
   }
   .homeCare-content {
@@ -105,4 +113,7 @@
     flex-direction: column;
     gap: 20px;
   }
+}
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+
 }
