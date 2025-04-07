@@ -7,7 +7,7 @@ interface TestimonialProps {
   name: string;
   place: string;
 }
-const TestimonialCard: React.FC<TestimonialProps> = (props) => {
+const HomeTestimonialCard: React.FC<TestimonialProps> = (props) => {
   return (
     <div className="homeTestimonialCard-container">
       <div className="homeTestimonialCard-content">
@@ -24,4 +24,4 @@ const TestimonialCard: React.FC<TestimonialProps> = (props) => {
     </div>
   );
 };
-export default TestimonialCard;
+export default HomeTestimonialCard;
