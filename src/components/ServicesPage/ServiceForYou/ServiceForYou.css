@@ -113,11 +113,11 @@
     width: 100%;
     padding: 10px;
   }
+  .serviceForYouImgs-container > img:nth-child(1) {
+    width: 100%;
+  }
   .serviceForYouImgs-container > img:nth-child(2) {
-    position: absolute;
-    right: -15px;
-    bottom: -20px;
-    width: 250px;
+  display: none;
   }
   .serviceForYou-content:nth-child(2) {
     width: 100%;
