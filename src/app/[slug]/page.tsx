@@ -16,6 +16,7 @@ import AboutUsKey from "@/components/AboutUs/AboutUsKey/AboutUsKey";
 import AboutUsTakeCare from "@/components/AboutUs/AboutUsTakeCare/AboutUsTakeCare";
 import HomeTestimonial from "@/components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomePartners from "@/components/HomePage/HomePartners/HomePartners";
+import BlogSidebar from "@/components/Blog/BlogSidebar/BlogSidebar";
 
 const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   _id,
@@ -133,7 +134,7 @@ export default async function SlugPage({
 
       {isPost && (
         <div className="blog-wrapper2">
-          {/* <BlogSidebar /> */}
+          <BlogSidebar />
         </div>
       )}
     </div>

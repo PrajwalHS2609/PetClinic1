@@ -37,7 +37,6 @@ export default async function IndexPage() {
                   alt={post.title}
                   width={550}
                   height={310}
-                  className="rounded-md object-cover aspect-video"
                 />
               )}
           </div>
