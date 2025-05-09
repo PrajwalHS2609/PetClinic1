@@ -17,6 +17,7 @@ import AboutUsTakeCare from "@/components/AboutUs/AboutUsTakeCare/AboutUsTakeCar
 import HomeTestimonial from "@/components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomePartners from "@/components/HomePage/HomePartners/HomePartners";
 import BlogSidebar from "@/components/Blog/BlogSidebar/BlogSidebar";
+import { portableTextComponents } from "@/components/PortableTextComponents";
 
 const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   _id,
@@ -101,33 +102,28 @@ export default async function SlugPage({
         ) : null}
 
         {/* HeaderComponent for service content */}
-        {!isPost &&  (
+        {!isPost && (
           <>
-          <ServicesHeader />
-          <ServiceForYou />
-          <HomeService />
-          <PetsType />
-          <HomeCare />
-          <AboutUsKey />
-          <AboutUsTakeCare />
-          <HomeTestimonial />
-          <HomePartners />
-        </>
+            <ServicesHeader />
+            <ServiceForYou />
+            <HomeService />
+            <PetsType />
+            <HomeCare />
+            <AboutUsKey />
+            <AboutUsTakeCare />
+            <HomeTestimonial />
+            <HomePartners />
+          </>
         )}
         <h1 className={isPost ? "blogHead-content" : "subServicesMain-item"}>
           {content.title}
         </h1>
         <div className={isPost ? "blogHead-content" : "subServicesMain-item"}>
-          {/* Render body only for posts */}
-          {isPost && Array.isArray(content.body) && (
-            <PortableText value={content.body} />
-          )}
-        </div>
-        <div className={isPost ? "blogHead-content" : "subServicesMain-item"}>
-          {!isPost && Array.isArray(content.body) && (
-            <>
-              <PortableText value={content.body} />
-            </>
+          {Array.isArray(content.body) && (
+            <PortableText
+              value={content.body}
+              components={portableTextComponents}
+            />
           )}
         </div>
       </div>
