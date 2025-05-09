@@ -26,9 +26,7 @@ const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   body,
   metaTitle,
   metaDescription,
-  mainImage {
-    asset->{ _id, url }
-  }
+ 
 }`;
 
 const SERVICE_QUERY = `*[_type == "ServiceCategory" && slug.current == $slug][0]{
