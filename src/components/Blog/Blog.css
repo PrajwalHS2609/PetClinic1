@@ -987,7 +987,7 @@
 
   .blogHead-content > h2 {
     /* border: solid; */
-    text-align: center;
+    text-align: start;
     width: 100%;
   }
 }
