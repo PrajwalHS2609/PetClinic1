@@ -1,9 +1,11 @@
+import Image from "next/image";
+import petFormBg from "@/media/petformBg.png"
 export default function ContactUsForm() {
   return (
     <div className="contactUsForm-container">
-      <img
-        src="https://pettie.wpengine.com/wp-content/uploads/2023/04/Pty-Contact-img-1.webp"
-        alt=""
+      <Image
+        src={petFormBg}
+        alt="pets Form"
       />
       <div className="contactUsForm-form">
         <form action="">
