@@ -20,6 +20,9 @@ export default function FooterLink() {
         <li>
           <Link href="/contact-us">Contact Us</Link>
         </li>
+        <li>
+          <Link href="/other-services" style={{color:"#232121"}}>OtherServices</Link>
+        </li>
       </ul>
     </div>
   );
