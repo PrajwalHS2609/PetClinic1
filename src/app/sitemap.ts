@@ -65,7 +65,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       "/best-pets-clinic-near-kr-puram",
     ].map((path) => ({
       url: new URL(path, baseUrl).toString(),
-      lastModified: new Date("2024-12-31"),
+      lastModified: new Date(),
       changeFrequency: "weekly" as ChangeFrequency,
       priority: 0.8,
     }));
