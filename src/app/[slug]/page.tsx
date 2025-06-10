@@ -18,6 +18,7 @@ import HomeTestimonial from "@/components/HomePage/HomeTestimonial/HomeTestimoni
 import HomePartners from "@/components/HomePage/HomePartners/HomePartners";
 import BlogSidebar from "@/components/Blog/BlogSidebar/BlogSidebar";
 import { portableTextComponents } from "@/components/PortableTextComponents";
+export const revalidate = 0;
 
 const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   _id,

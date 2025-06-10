@@ -4,6 +4,7 @@ import "./global.css";
 import TopBar from "@/components/TopBar/Topbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import BackToTop from "@/components/BackToTop/BackToTop";
+import PopupAd from "@/components/PopupAd/PopupAd";
 
 export default function RootLayout({
   children,
@@ -24,6 +25,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <PopupAd/>
         <TopBar />
         <Navbar />
         <main className="main-container"> {children}</main>

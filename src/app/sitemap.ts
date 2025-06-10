@@ -10,6 +10,7 @@ type ChangeFrequency =
   | "monthly"
   | "yearly"
   | "never";
+export const revalidate = 0;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   try {
