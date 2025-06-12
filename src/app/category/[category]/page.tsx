@@ -1,4 +1,5 @@
 // src/app/category/[category]/page.tsx
+
 import { client } from "@/sanity/client";
 import { type SanityDocument } from "next-sanity";
 import Image from "next/image";
@@ -7,11 +8,12 @@ import "@/components/Blog/Blog.css";
 import { FaTags } from "react-icons/fa6";
 import BlogHeader from "@/components/Blog/BlogHeader";
 
-// type Props = {
-//   params: {
-//     category: string;
-//   };
-// };
+// 🧠 Correct type for props (async-compatible)
+type Props = {
+  params: { category: string };
+  // Optional, in case you later use searchParams
+  searchParams?: { [key: string]: string | string[] | undefined };
+};
 
 const CATEGORY_POSTS_QUERY = `
   *[_type == "post" && $category in categories[]->slug.current] | order(publishedAt desc) {
@@ -31,11 +33,7 @@ const CATEGORY_POSTS_QUERY = `
   }
 `;
 
-export default async function CategoryPage({
-  params,
-}: {
-  params: { category: string };
-}) {
+export default async function CategoryPage({ params }: Props) {
   const category = params.category.toLowerCase();
 
   const posts = await client.fetch<SanityDocument[]>(CATEGORY_POSTS_QUERY, {
@@ -64,16 +62,11 @@ export default async function CategoryPage({
               </div>
               <div className="blogCard-tag">
                 <FaTags className="blogCard-tagIcon" />
-                {post.categories?.map(
-                  (cat: { title: string; slug: { current: string } }) => (
-                    <Link
-                      href={`/category/${cat.slug.current}`}
-                      key={cat.slug.current}
-                    >
-                      {cat.title}
-                    </Link>
-                  )
-                )}
+                {post.categories?.map((cat: { title: string; slug: { current: string } }) => (
+                  <Link href={`/category/${cat.slug.current}`} key={cat.slug.current}>
+                    {cat.title}
+                  </Link>
+                ))}
               </div>
               <div className="blogCard-headContainer">
                 <h3>
