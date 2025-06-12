@@ -8,11 +8,10 @@ import "@/components/Blog/Blog.css";
 import { FaTags } from "react-icons/fa6";
 import BlogHeader from "@/components/Blog/BlogHeader";
 
-// 🧠 Correct type for props (async-compatible)
-type Props = {
-  params: { category: string };
-  // Optional, in case you later use searchParams
-  searchParams?: { [key: string]: string | string[] | undefined };
+type PageProps = {
+  params: {
+    category: string;
+  };
 };
 
 const CATEGORY_POSTS_QUERY = `
@@ -33,7 +32,7 @@ const CATEGORY_POSTS_QUERY = `
   }
 `;
 
-export default async function CategoryPage({ params }: Props) {
+export default async function CategoryPage({ params }: PageProps) {
   const category = params.category.toLowerCase();
 
   const posts = await client.fetch<SanityDocument[]>(CATEGORY_POSTS_QUERY, {
@@ -94,4 +93,12 @@ export default async function CategoryPage({ params }: Props) {
       </div>
     </div>
   );
+}
+
+// ✅ Add this below the component
+export async function generateStaticParams() {
+  const categories = await client.fetch(`*[_type == "category"]{ slug }`);
+  return categories.map((cat: { slug: { current: string } }) => ({
+    category: cat.slug.current,
+  }));
 }
