@@ -10,6 +10,15 @@ const BlogCategories = () => {
         <li>
           <Link href={"/blog"}>All</Link>
         </li>
+        <li>
+          <Link href={"/category/dogs "}>Dogs</Link>
+        </li>
+        <li>
+          <Link href={"/category/cats"}>Cats</Link>
+        </li>
+        <li>
+          <Link href={"/category/tips"}>Tips</Link>
+        </li>
       </ul>
     </div>
   );
