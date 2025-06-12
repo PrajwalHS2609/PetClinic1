@@ -44,7 +44,7 @@ export default async function CategoryPage({ params }: Props) {
     <div className="main-container">
       <BlogHeader />
       <h2 style={{ textAlign: "center", margin: "1rem 0" }}>
-        Posts in: {category.toUpperCase()}
+        {category.toUpperCase()}
       </h2>
       <div className="blog-subContainer">
         {posts.length > 0 ? (
@@ -62,11 +62,16 @@ export default async function CategoryPage({ params }: Props) {
               </div>
               <div className="blogCard-tag">
                 <FaTags className="blogCard-tagIcon" />
-                {post.categories?.map((cat: { title: string; slug: { current: string } }) => (
-                  <Link href={`/category/${cat.slug.current}`} key={cat.slug.current}>
-                    {cat.title}
-                  </Link>
-                ))}
+                {post.categories?.map(
+                  (cat: { title: string; slug: { current: string } }) => (
+                    <Link
+                      href={`/category/${cat.slug.current}`}
+                      key={cat.slug.current}
+                    >
+                      {cat.title}
+                    </Link>
+                  )
+                )}
               </div>
               <div className="blogCard-headContainer">
                 <h3>
