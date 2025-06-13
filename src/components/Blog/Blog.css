@@ -399,7 +399,11 @@
   font-size: 20px;
   font-weight: bold;
 }
-
+.blogHead-content > p > strong {
+  color: var(--customColor1);
+  font-size: 20px;
+  font-weight: bold;
+}
 .blogHead-content > ul {
   width: 100%;
   display: flex;

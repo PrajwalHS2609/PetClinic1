@@ -1,5 +1,3 @@
-// src/app/category/[category]/page.tsx
-
 import { client } from "@/sanity/client";
 import { type SanityDocument } from "next-sanity";
 import Image from "next/image";
@@ -8,12 +6,7 @@ import "@/components/Blog/Blog.css";
 import { FaTags } from "react-icons/fa6";
 import BlogHeader from "@/components/Blog/BlogHeader";
 
-type PageProps = {
-  params: {
-    category: string;
-  };
-};
-
+// 🧠 CATEGORY POSTS GROQ QUERY
 const CATEGORY_POSTS_QUERY = `
   *[_type == "post" && $category in categories[]->slug.current] | order(publishedAt desc) {
     _id,
@@ -32,8 +25,13 @@ const CATEGORY_POSTS_QUERY = `
   }
 `;
 
-export default async function CategoryPage({ params }: PageProps) {
-  const category = params.category.toLowerCase();
+export default async function CategoryPage({
+  params,
+}: {
+  params: Promise<{ category: string }>;
+}) {
+  const resolvedParams = await params;
+  const category = resolvedParams.category.toLowerCase();
 
   const posts = await client.fetch<SanityDocument[]>(CATEGORY_POSTS_QUERY, {
     category,
@@ -95,7 +93,7 @@ export default async function CategoryPage({ params }: PageProps) {
   );
 }
 
-// ✅ Add this below the component
+// ✅ Will be picked up by App Router
 export async function generateStaticParams() {
   const categories = await client.fetch(`*[_type == "category"]{ slug }`);
   return categories.map((cat: { slug: { current: string } }) => ({
