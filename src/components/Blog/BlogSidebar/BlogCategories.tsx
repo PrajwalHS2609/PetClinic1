@@ -4,6 +4,9 @@ import "@/components/Blog/Blog.css";
 import { client } from "@/sanity/client";
 import { SanityDocument } from "next-sanity";
 
+export const revalidate = 0;
+
+
 const CATEGORY_QUERY = `*[_type == "blogCategory"] | order(title asc){
   _id,
   title,
