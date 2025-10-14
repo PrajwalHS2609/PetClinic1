@@ -5,6 +5,7 @@ import Image from "next/image";
 import "@/components/Blog/Blog.css";
 import BlogHeader from "@/components/Blog/BlogHeader";
 import { FaTags } from "react-icons/fa6";
+export const revalidate = 0;
 
 const POSTS_QUERY = `*[
     _type == "post" && defined(slug.current)
