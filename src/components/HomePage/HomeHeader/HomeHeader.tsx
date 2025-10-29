@@ -9,7 +9,7 @@ import "@/components/Style/style.css";
 import Image from "next/image";
 import Carousel1Img1 from "@/media/HomeHeaderImg/Carousel1Img1.png";
 import Carousel1Img2 from "@/media/HomeHeaderImg/Carousel1Img2.png";
-
+import food from "@/media/HomeHeaderImg/HomeHeaderFood.png";
 export default function HomeHeader() {
   return (
     <Carousel>
@@ -37,12 +37,9 @@ export default function HomeHeader() {
           </div>
           <div className="homeHeader-content" id="homeHeader-content3">
             <Image src={Carousel1Img2} alt="Food Pack" />
-            {/* <span>
-              <img
-                src="https://pettie.wpengine.com/wp-content/uploads/2023/04/Home-1-Slider-Plate-1.webp"
-                alt="Plate"
-              />
-            </span> */}
+            <span>
+              <Image src={food} alt="Plate" />
+            </span>
           </div>
         </div>
       </Carousel.Item>
@@ -78,10 +75,7 @@ export default function HomeHeader() {
               alt="Food Pack"
             />
             <span>
-              <img
-                src="https://pettie.wpengine.com/wp-content/uploads/2023/04/Home-1-Slider-Plate-1.webp"
-                alt="Plate"
-              />
+              <Image src={food} alt="Plate" />
             </span>
           </div>
         </div>
@@ -118,10 +112,7 @@ export default function HomeHeader() {
               alt="Food Pack"
             />
             <span>
-              <img
-                src="https://pettie.wpengine.com/wp-content/uploads/2023/04/Home-1-Slider-Plate-1.webp"
-                alt="Plate"
-              />
+              <Image src={food} alt="Plate" />
             </span>
           </div>
         </div>
