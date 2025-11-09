@@ -82,5 +82,8 @@ export default defineType({
     defineArrayMember({
       type: 'accordionBlock',
     }),
+    defineArrayMember({
+      type: 'faq',
+    }),
   ],
 })
