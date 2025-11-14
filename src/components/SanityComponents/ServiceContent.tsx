@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { PortableText } from "next-sanity";
 import { portableTextComponents } from "@/components/PortableTextComponents";
 import "@/components/Style/style.css";
@@ -18,13 +21,18 @@ import ball from "@/media/tennis-ball.png";
 import ropeToy from "@/media/rope-toy.png";
 import petToy from "@/media/pet-toy.png";
 
-
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
 export type CustomTable = {
   title?: string;
   headers?: string[];
   rows?: { cells: string[] }[];
+};
+export type CarouselImage = {
+  asset?: { url?: string };
+  alt?: string;
+  caption?: string;
+  link?: string; // ✅ Added link field
 };
 
 export type ServiceContentType = {
@@ -36,6 +44,10 @@ export type ServiceContentType = {
   youtubeVideoUrl?: string;
   faq?: FaqItem[];
   customTable?: CustomTable;
+  carouselBlock?: {
+    title?: string;
+    images?: CarouselImage[];
+  };
 };
 
 export default function ServiceContent({
@@ -45,7 +57,9 @@ export default function ServiceContent({
 }) {
   const imageUrl = content?.mainImage?.asset?.url;
   const youtubeUrl = content?.youtubeVideoUrl;
+  const [index, setIndex] = useState(0);
 
+  const handleSelect = (selectedIndex: number) => setIndex(selectedIndex);
   return (
     <div className="sanityContent-container">
       <div className="sanityContent-content">
@@ -81,7 +95,35 @@ export default function ServiceContent({
             </svg>
           </div>
         </div>
-
+        {/* ✅ Carousel Section */}
+        {content.carouselBlock?.images?.length ? (
+          <Carousel activeIndex={index} onSelect={handleSelect}>
+            {content.carouselBlock.images.map((img, i) => (
+              <Carousel.Item key={i}>
+                {img.link ? (
+                  <a href={img.link} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={img.asset?.url}
+                      alt={img.alt || `Slide ${i + 1}`}
+                      className="d-block w-100 rounded"
+                    />
+                  </a>
+                ) : (
+                  <img
+                    src={img.asset?.url}
+                    alt={img.alt || `Slide ${i + 1}`}
+                    className="d-block w-100 rounded"
+                  />
+                )}
+                {img.caption && (
+                  <Carousel.Caption>
+                    <h3>{img.caption}</h3>
+                  </Carousel.Caption>
+                )}
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        ) : null}
         <>
           <ServiceForYou />
           <HomeService />
