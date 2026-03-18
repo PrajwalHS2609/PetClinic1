@@ -46,6 +46,9 @@ const SERVICE_QUERY = `{
     body,
     mainImage { asset->{ url } },
     youtubeVideoUrl,
+        seoKeywords{
+  keywords
+},
     faq[] { question, answer },
     customTable{title, headers, rows[] {cells}}
   },

@@ -20,6 +20,7 @@ import Link from "next/link";
 import ball from "@/media/tennis-ball.png";
 import ropeToy from "@/media/rope-toy.png";
 import petToy from "@/media/pet-toy.png";
+import SanitySeoKeywords from "./SanitySeoKeyword";
 
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
@@ -44,6 +45,9 @@ export type ServiceContentType = {
   youtubeVideoUrl?: string;
   faq?: FaqItem[];
   customTable?: CustomTable;
+  seoKeywords?: {
+    keywords?: string[];
+  };
   carouselBlock?: {
     title?: string;
     images?: CarouselImage[];
@@ -133,6 +137,9 @@ export default function ServiceContent({
           <AboutUsTakeCare />
           <HomeTestimonial />
           <HomePartners />
+          {content.seoKeywords?.keywords && (
+            <SanitySeoKeywords keywords={content.seoKeywords.keywords} />
+          )}
         </>
         {youtubeUrl && (
           <div className="youtube-container">

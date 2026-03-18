@@ -43,5 +43,10 @@ export default defineType({
       title: 'Meta Description',
       type: 'text',
     }),
+        defineField({
+      name: 'seoKeywords',
+      title: 'SEO Keywords',
+      type: 'seoKeywords',
+    }),
   ],
 })
